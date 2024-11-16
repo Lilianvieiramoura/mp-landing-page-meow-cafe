@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-color: #f7f2e8;
+  --title-color: #1a1a1a;
+  --headings-color: #3c0e0e;
+  --brand-color: #431b1b;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 1188px;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 10;
+  position: relative;
+}
+
+.navbar-logo {
+  width: 170px;
+  height: 150px;
+}
+
+.navbar__logo-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__links {
+  display: flex;
+  list-style: none;
+  gap: 42px;
+  color: var(--headings-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.navbar__links .active {
+  border-bottom: 5px solid var(--headings-color);
+}
+
+.navbar__title {
+  margin-right: 42px; 
+  color: var(--title-color);
+  font-weight: 500;
+
+}
+
+.navbar__login {
+  display: flex;
+  list-style: none;
+  gap: 42px;
+  align-items: center;
+}
+
+.navbar__login-link {
+  color: var(--headings-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.navbar__delivery-link button {
+  background-color: var(--brand-color);
+  color: white;
+  padding: 10px 32px;
+  border-radius: 39px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.bg-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.title__slogan {
+  font-weight: 700;
+  color: var(--headings-color);
+  font-size: 24px;
+}
+
+.title__main {
+  font-weight: 700;
+  color: var(--headings-color);
+  font-size: 80px;
+  width: 252px;
+  line-height: 104.5%;
+}
+
+.title__description {
+  font-weight: 500;
+  color: var(--headings-color);
+  font-size: 16px;
+  width: 350px;
+  margin-top: 20px;
+  line-height: 157%;
+}

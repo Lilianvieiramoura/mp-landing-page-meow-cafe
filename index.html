@@ -4,33 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meow Café</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo-meow">
-      <img src="./assets/gato.svg" alt="">
+    <div class="container">
+      
+      <nav class="navbar">
+        <div class="navbar__logo-links">
+            <img src="./assets/gato.svg" class="navbar-logo" alt="">
+            <span class="navbar__title">Meow Café</span>
+
+            <ul class="navbar__links">
+              <li class="active">Início</li>
+              <li>Produtos</li>
+              <li>Sobre</li>
+            </ul>
+        </div>
+            <ul class="navbar__login">
+              <li class="navbar__login-link">Login</li>
+              <li class="navbar__delivery-link"><button>Delivery</button></li>
+            </ul>
+      </nav>
+      <img class="bg-img" src="./assets/img-meow.svg" alt="">
+
+      <div class="titles">
+        <h3 class="title__slogan">Sabor inesquecível</h3>
+        <h1 class="title__main">Meow Café</h1>
+        <p class="title__description">Um lugar perfeito para pais de pets e amantes de café. Nossa cafeteria tem um espaço confortável para você e seu melhor amigo.</p>
+      </div>
     </div>
 
-    <p>Meow Café</p>
-
-    <div class="header-p">
-      <a href="">Início</a>
-      <a href="">Produtos</a>
-      <a href="">Sobre</a>
-    </div>
-
-    <div class="header-s">
-      <a href="">Login</a>
-      <a href="">Delivery</a>
-    </div>
-
-    <div>
-      <img src="./assets/img-principal-meow.svg" alt="">
-    </div>
-
-    <h3>Sabor inesquecível</h3>
-    <h1>Meow <br> Café</h1>
-    <p>Um lugar perfeito para pais de pets e <br> mantes de café. Nossa cafeteria tem um <br> espaço confortável para você e seu melhor <br> amigo.</p>
-  </header>
+    
 </body>
 </html>
