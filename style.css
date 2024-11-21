@@ -11,6 +11,7 @@
   --title-color: #1a1a1a;
   --headings-color: #3c0e0e;
   --brand-color: #431b1b;
+  --croissant-title: #4D1D1D;
 }
 
 body {
@@ -226,5 +227,57 @@ body {
   z-index:-10
 }
 
+.croissants {
+  margin-top:100px;
+}
 
+.croissants__price {
+  border-radius: 20px;
+  width: 110px;
+  height: 40px;
+  color: #F9C4C4;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+}
 
+.croissants__title {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--croissant-title);
+}
+
+.croissants__title-underline {
+  width:50px;
+  height:2px;
+  background-color:black;
+}
+
+.croissants__title-subtitle {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--headings-color);
+}
+
+.croissants__description {
+  font-size: 16px;
+  color: var(--headings-color);
+  width: 350px;
+}
+
+.croissants__link {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--headings-color);
+  text-decoration: none;
+}
+
+.croissants__img {
+  position: absolute;
+  margin-top: 50px;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
