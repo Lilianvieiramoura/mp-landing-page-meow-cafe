@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -15,8 +16,10 @@
 body {
   background-color: var(--bg-color);
   display: flex;
-  justify-content: center;
+  align-items: center;
   font-family: 'Poppins', sans-serif;
+  /* overflow-x:hidden; */
+  flex-direction:column;
 }
 
 .container {
@@ -40,6 +43,7 @@ body {
 .navbar__logo-links {
   display: flex;
   align-items: center;
+  gap: 42px;
 }
 
 .navbar__links {
@@ -59,7 +63,6 @@ body {
   margin-right: 42px; 
   color: var(--title-color);
   font-weight: 500;
-
 }
 
 .navbar__login {
@@ -113,3 +116,115 @@ body {
   margin-top: 20px;
   line-height: 157%;
 }
+
+.coffees {
+  margin-top:200px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  position:relative;
+} 
+
+.coffees__title {
+  color:var(--headings-color);
+  text-align:center;
+  font-size:40px;
+  font-weight:600
+}
+
+.coffees__title-underline {
+  width:66px;
+  height:1px;
+  background-color:var(--headings-color);
+}
+
+.coffees__subtitle {
+  color:var(--headings-color);
+  text-align:center;
+  font-size:16px;
+  font-weight:400;
+  line-height:157%;
+  max-width:544px;
+  margin-top:24px;
+}
+
+.coffees__link {
+  color:var(--headings-color);
+  text-align:center;
+  font-size:16px;
+  font-weight:600;
+  margin-top:44px;
+}
+
+.coffees__list {
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:40px;
+  gap:70px;
+  justify-content:center;
+}
+
+.coffees__item {
+  border-radius:48px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:24px;
+  text-align:center;
+  color:#fff;
+  max-width:323px;
+}
+
+.coffees__item.one {
+  background:linear-gradient(203deg,#f6c7c5 4.72%,#c27d7a 102.83%)
+}
+
+.coffees__item.two {
+  background:linear-gradient(203deg,rgba(250,250,250,.95) 4.72%,rgba(84,21,17,.58) 102.83%)
+}
+.coffees__item.three {
+  background:linear-gradient(203deg,rgba(10,9,9,.95) 4.72%,rgba(84,21,17,.95) 102.83%)
+}
+
+.coffees__item img {
+  min-height:217px
+}
+
+.coffees__item-price {
+  font-size:20px;
+}
+
+.coffees__item-name {
+  margin-top:4px;
+  font-size:32px;
+  font-weight:600;
+}
+
+.coffees__item-description {
+  margin-top:20px;
+  font-size:14px;
+  max-width:260px;
+}
+
+.coffees__item-delivery-button {
+  margin-top:20px;
+  border-radius:25px;
+  background:#fff;
+  box-shadow:0 8px 7px #ead4d440;
+  width:100%;
+  padding:12px;
+  color:#000;
+  text-align:center;
+  font-size:16px;
+  font-weight:600
+}
+
+.coffees__background-image {
+  width:100vw;
+  position:absolute;
+  top:0;
+  z-index:-10
+}
+
+
+
